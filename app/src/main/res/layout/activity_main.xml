@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header image placeholder -->
+        <View
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#FF7043" />
+
+        <!-- Content card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="International Band Music Concert"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111111" />
+
+            <!-- Date/time row -->
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="14 December, 2021 • 4:00PM - 9:00PM"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <!-- Location row -->
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Daniel Gymnasium, 4th Ave, Petersburg, VA 23806"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <!-- Organizer row -->
+            <TextView
+                android:id="@+id/tvOrganizer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Organizer: Ashfaq Sayem"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <!-- About label -->
+            <TextView
+                android:id="@+id/tvAboutLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="About Event"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#111111" />
+
+            <!-- About text -->
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Enjoy your favorite music and have a great time with friends and family."
+                android:textSize="14sp"
+                android:textColor="#555555" />
+
+            <!-- Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAccept"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Accept"
+                    android:backgroundTint="#3D5AFE"
+                    android:textColor="@android:color/white" />
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/btnReject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reject"
+                    android:backgroundTint="#EEEEEE"
+                    android:textColor="#3D5AFE" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
